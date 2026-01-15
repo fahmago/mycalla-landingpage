@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -99,9 +100,9 @@ export default function Hero() {
                     Transforming brands into unforgettable digital experiences through innovation and creativity.
                 </p>
                 <div className="flex justify-center md:justify-end">
-                    <button className="bg-[#42224A] text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-[#5a2f62] transition-all hover:shadow-2xl hover:scale-105">
+                    <Link href="#work" className="bg-[#42224A] text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-[#5a2f62] transition-all hover:shadow-2xl hover:scale-105">
                         Explore Our Work
-                    </button>
+                    </Link>
                 </div>
             </div>
         </section>
