@@ -64,8 +64,9 @@ export default function Portfolio() {
                     {projects.map((project, idx) => (
                         <div
                             key={idx}
+                            tabIndex={0}
                             className={`portfolio-card group relative overflow-hidden rounded-2xl cursor-pointer ${project.size === 'large' ? 'md:col-span-2 md:row-span-2 h-[240px] md:h-[500px]' : 'h-[240px]'
-                                } bg-gradient-to-br from-gray-100 to-gray-200 hover:shadow-2xl transition-all duration-500`}
+                                } bg-gradient-to-br from-gray-100 to-gray-200 hover:shadow-2xl transition-all duration-500 focus:outline-none`}
                         >
                             {/* Portfolio Image */}
                             {project.image && (
@@ -85,14 +86,14 @@ export default function Portfolio() {
                             {/* Content */}
                             <div className="absolute inset-0 p-8 flex flex-col justify-end">
                                 {/* Hover overlay */}
-                                <div className="absolute inset-0 bg-[#42224A]/0 group-hover:bg-[#42224A]/90 transition-all duration-500" />
+                                <div className="absolute inset-0 bg-[#42224A]/0 group-hover:bg-[#42224A]/90 group-active:bg-[#42224A]/90 group-focus:bg-[#42224A]/90 transition-all duration-500" />
 
                                 {/* Text */}
-                                <div className="relative z-10 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
-                                    <h3 className="text-2xl md:text-3xl font-bold text-white drop-shadow-lg">
+                                <div className="relative z-10 transform translate-y-8 group-hover:translate-y-0 group-active:translate-y-0 group-focus:translate-y-0 transition-transform duration-500">
+                                    <h3 className="text-2xl md:text-3xl font-bold text-white drop-shadow-lg opacity-0 group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100 transition-opacity duration-500">
                                         {project.title}
                                     </h3>
-                                    <p className="text-white/90 transition-colors duration-500 opacity-0 group-hover:opacity-100">
+                                    <p className="text-white/90 transition-colors duration-500 opacity-0 group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100">
                                         {project.desc}
                                     </p>
                                 </div>
