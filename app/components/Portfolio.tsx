@@ -64,7 +64,7 @@ export default function Portfolio() {
                     {projects.map((project, idx) => (
                         <div
                             key={idx}
-                            className={`portfolio-card group relative overflow-hidden rounded-2xl cursor-pointer ${project.size === 'large' ? 'md:col-span-2 md:row-span-2 h-[500px]' : 'h-[240px]'
+                            className={`portfolio-card group relative overflow-hidden rounded-2xl cursor-pointer ${project.size === 'large' ? 'md:col-span-2 md:row-span-2 h-[240px] md:h-[500px]' : 'h-[240px]'
                                 } bg-gradient-to-br from-gray-100 to-gray-200 hover:shadow-2xl transition-all duration-500`}
                         >
                             {/* Portfolio Image */}
