@@ -35,9 +35,14 @@ export default function Navbar() {
                     </Link>
 
                     {/* CTA Button */}
-                    <button className="bg-[#42224A] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-[#5a2f62] transition-all hover:shadow-lg">
+                    <Link
+                        href="https://wa.me/6285811520570"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-[#42224A] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-[#5a2f62] transition-all hover:shadow-lg"
+                    >
                         Start a Project
-                    </button>
+                    </Link>
                 </div>
 
                 {/* Mobile Menu Button */}

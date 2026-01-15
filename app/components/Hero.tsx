@@ -72,7 +72,7 @@ export default function Hero() {
     return (
         <section
             ref={heroRef}
-            className="relative min-h-screen flex items-center justify-end overflow-hidden bg-white pt-20 pr-12"
+            className="relative min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-end overflow-hidden bg-[#0a050a] md:bg-white pt-20 px-6 md:pr-12 md:px-0"
         >
             {/* 3D Background - Blob (LEFT SIDE, NO TRANSPARENCY) */}
             <div
@@ -90,15 +90,15 @@ export default function Hero() {
             </div>
 
             {/* Hero Content (RIGHT-ALIGNED) */}
-            <div className="relative z-10 max-w-5xl text-right hero-text">
-                <h1 className="text-5xl md:text-7xl font-black text-[#0a050a] mb-6 leading-none">
+            <div className="relative z-10 max-w-5xl text-center md:text-right hero-text">
+                <h1 className="text-5xl md:text-7xl font-black text-white md:text-[#0a050a] mb-6 leading-none">
                     WE SHAPE<br />
-                    <span className="text-[#42224A]">DIGITAL<br />IDENTITIES</span>
+                    <span className="text-white md:text-[#42224A]">DIGITAL<br />IDENTITIES</span>
                 </h1>
-                <p className="text-xl md:text-2xl text-gray-600 mb-8 ml-auto max-w-xl">
+                <p className="text-xl md:text-2xl text-gray-300 md:text-gray-600 mb-8 mx-auto md:ml-auto md:mr-0 max-w-xl">
                     Transforming brands into unforgettable digital experiences through innovation and creativity.
                 </p>
-                <div className="flex justify-end">
+                <div className="flex justify-center md:justify-end">
                     <button className="bg-[#42224A] text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-[#5a2f62] transition-all hover:shadow-2xl hover:scale-105">
                         Explore Our Work
                     </button>
